@@ -1,0 +1,53 @@
+#first {
+  width: 60%/*calc(100%/3)*/;
+  float: left;
+}
+
+#second {
+  width: 40%;
+  float: right;
+  object-fit: 
+}
+
+.slideshow li {
+  width: 100%;
+  display: none;
+}
+
+.slideshow li.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+ 
+ #first,
+ #second {
+  width: 100%;
+  float: none;
+
+ }
+
+
+}
+
+
+
+
+
+
+
+
+} 
