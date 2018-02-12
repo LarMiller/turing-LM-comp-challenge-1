@@ -1,9 +1,13 @@
-#first {
-  width: 60%/*calc(100%/3)*/;
-  float: left;
+.wrapper {
+ /* width: 60%*//*calc(100%/3)*/;
+  /*float: left;*/
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-#second {
+.second {
   width: 40%;
   float: right;
   object-fit: 
@@ -18,6 +22,36 @@
   display: block;
 }
 
+.primary {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: magenta;
+  grid-row: 1;
+}
+
+#profile {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  background-color: black;
+
+}
+
+#shirtless-photos {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: blue;
+
+}
+
+.second {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+}
 
 
 
@@ -33,10 +67,11 @@
 
 @media screen and (max-width: 768px){
  
- #first,
- #second {
+ .wrapper,
+ .second {
   width: 100%;
   float: none;
+  border: 1px solid black;
 
  }
 
