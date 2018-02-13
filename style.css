@@ -1,16 +1,25 @@
+* {
+  margin-top: 0;
+  padding: 0;
+}
+
 .wrapper {
- /* width: 60%*//*calc(100%/3)*/;
-  /*float: left;*/
   display: grid;
   border: 1px solid black;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
 .second {
+  height: 100%;
   width: 100%;
   float: right;
   background-image: url("https://media.toofab.com/2016/11/15/1115-rock-main-810x960.jpg");
+  object-fit: none;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -59,7 +68,7 @@
 }
 
 #salary {
-  background-color: #b4583e;
+  background-color: #DEEFF5;
 
 }
 
@@ -80,39 +89,122 @@
 } 
 
 #pastroles {
-  background-color: #DEEFF5;
+  background-color: #b4583e;
 }
 
 .icon {
-  font-size: 8rem;
+  vertical-align: center;
+  font-size: 6rem;
+  padding-top: 1.5rem;
   color: black;
+  text-decoration: none;
 }
 
 .box {
    text-align: center;
-   padding-top: 6rem;
+   padding-top: 1.75rem;
 }
 
+.box:hover{
+  border-color: 696565;
+}
 
+.button {
+  border: 1px solid #e4705a;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  padding: 15px;
+  font-size: small;
+  color: #4da3c5;
+  font-family: 'Playfair Display', serif;
+}
 
+.button:hover{
+  text-decoration: underline lightgrey; 
+  opacity: .95;
+}
 
+a {
+  text-decoration: none;
+}
 
+h1 {
+  margin: 0;
+  padding-top: 5px;
+}
 
+h2 {
+  padding-top: 10px;
+  font-size: 20px;
+  color: black;
+  font-family: 'Playfair Display', serif; 
+}
 
+h2:hover{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
 
+p {
+  text-align: left;
+  padding: 15px;
+}
 
+li {
+  float: right;
+  color: black;
+  font-size: 50px;
+  list-style-type: none;
+}
 
-dfe0dd
+.active {
+  color: white;
+}
 
+.arrow-prev{
+  margin-top: 85%;
+  margin-left: 20px;
+  padding-left: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  float; left;
+  border-radius: 50%;
+  border-color: black;
+  background-color: #4da3c5;
 
+}
 
+.arrow-next {
+  margin-top: 85%;
+  margin-right: -3.7rem;
+  padding-right: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  float: right;
+  border-radius: 50%;
+  border-color: black;
+  background-color: #4da3c5;
 
+}
+
+.arrow-prev:hover{
+  background-color: white;
+  border-color: #4da3c5;
+  border-width: 2px;
+}
+
+.arrow-next:hover{
+  background-color: white;
+  border-color: #4da3c5;
+  border-width: 2px;
+}
 
 @media screen and (max-width: 768px){
  
- .wrapper,
- .second {
+ .wrapper {
   width: 100%;
+  grid-gap: 0;
   float: none;
   border: 1px solid black;
   display: inline-block;
@@ -120,6 +212,7 @@ dfe0dd
  }
 
 .second {
+  display: none;
   width: 100%;
   height: 50rem;
   background-image: url("https://media.toofab.com/2016/11/15/1115-rock-main-810x960.jpg");
@@ -127,11 +220,8 @@ dfe0dd
   background-position: top;
 }
 
+h2 {
+  margin-bottom: 0;
 
+}
 
-
-
-
-
-
-} 
