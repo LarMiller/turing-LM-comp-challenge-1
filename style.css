@@ -18,17 +18,12 @@
   height: 100%;
   width: 100%;
   float: right;
-  background-image: url("https://media.toofab.com/2016/11/15/1115-rock-main-810x960.jpg");
+  background-image: url("CamEron.jpg");
   object-fit: none;
   background-repeat: no-repeat;
   background-position: top;
 }
 
-/*.slideshow {
-  background-image: url("https://bigshotjason.files.wordpress.com/2014/07/tumblr_n8tfwxtyxv1spy5cho1_1280.jpg?w=1000"); 
-
-}
-*/
 .slideshow li {
   width: 100%;
   display: none;
@@ -39,9 +34,10 @@
 }
 
 .primary {
+  box-sizing: border-box;
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: blanchedalmond;
+  background-color: #ACC3AF;
   grid-row: 1;
 }
 
@@ -51,45 +47,48 @@
   grid-row-start: 1;
   background-color: #dfe0dd;
   
-
 }
 
-#shirtless-photos {
+#resume {
+  margin-left: -15rem;
+}
+
+#contact {
+/*  margin-left: 10rem;
+*/}
+
+#mythical1 {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 2;
   background-color: #e4705a;
-
 }
 
-#personal {
+.octothorpes {
   background-color: #4da3c5;
-
 }
 
-#salary {
+.turing-strenghts {
   background-color: #DEEFF5;
-
 }
 
 .second {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 1;
-  grid-row-end: 4;
-
+  grid-row-end: 4;  
 }
 
-#philanthropy {
-  background-color: #DEF5F0;
+.previous {
+  background-color: #BDC0C8;
 }
 
-#fanclub {
+.pairing {
   background-color: blanchedalmond;
 } 
 
-#pastroles {
-  background-color: #b4583e;
+.contact {
+  background-color: #D59770;
 }
 
 .icon {
@@ -110,11 +109,12 @@
 }
 
 .button {
-  border: 1px solid #e4705a;
+  border: 2px solid #e4705a;
   background-color: white;
-  border-radius: 10px;
   margin-bottom: 17px;
-  padding: 15px;
+  height: 40px;
+  width: 20%;
+  padding: 5px;  
   font-size: small;
   color: #4da3c5;
   font-family: 'Playfair Display', serif;
@@ -131,7 +131,9 @@ a {
 
 h1 {
   margin: 0;
-  padding-top: 5px;
+  padding-top: .5rem;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 h2 {
@@ -163,9 +165,8 @@ li {
 }
 
 .arrow-prev{
-  margin-top: 85%;
+  margin-top: 400px;
   margin-left: 20px;
-  padding-left: 0;
   width: 3.2rem;
   height: 3.2rem;
   float; left;
@@ -176,7 +177,7 @@ li {
 }
 
 .arrow-next {
-  margin-top: 85%;
+  margin-top: 400px;
   margin-right: -3.7rem;
   padding-right: 0;
   width: 3.2rem;
@@ -215,13 +216,9 @@ li {
   display: none;
   width: 100%;
   height: 50rem;
-  background-image: url("https://media.toofab.com/2016/11/15/1115-rock-main-810x960.jpg");
+  margin-bottom: 1rem;
   background-repeat: no-repeat;
   background-position: top;
 }
 
-h2 {
-  margin-bottom: 0;
-
-}
 
