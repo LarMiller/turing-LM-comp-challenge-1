@@ -18,3 +18,4 @@ Color palette, but ONLY if you select a complementary palette.
 
 http://frontend.turing.io/projects/m1-static-comp-1.html
 
+# Turing-LM-Static-Comp-1
